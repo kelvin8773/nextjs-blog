@@ -4,7 +4,6 @@ import { getAllPostIds, getPostData } from '../../lib/posts'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
 import { GetStaticProps, GetStaticPaths } from 'next'
-import { stringify } from 'querystring'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostIds()
